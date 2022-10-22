@@ -63,7 +63,7 @@ function RatingStars(){
 
 function ReviewContent(){
     return(
-        <p className='review-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat luctus dui, faucibus pulvinar purus scelerisque vitae. Praesent nulla odio, egestas id dictum sed, mollis ut nisi. Curabitur tellus justo, sollicitudin id pretium at, blandit at ante. Morbi nec nisi magna. Nullam sit amet convallis quam. Pellentesque scelerisque tellus vel rutrum hendrerit. Aliquam non risus et purus tristique porttitor sit amet eleifend metus. Donec porttitor facilisis condimentum. In hac habitasse platea dictumst. Sed non dolor dictum, malesuada libero eget, consectetur mi. Aenean quis ipsum ut felis imperdiet consequat sit amet ac orci. Donec et euismod orci. Integer rutrum lorem in scelerisque feugiat. Sed quis ultricies sapien. Curabitur pharetra non risus vitae ullamcorper.</p>
+        <p className='review-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat luctus dui, faucibus pulvinar purus scelerisque vitae. Praesent nulla odio, egestas id dictum sed, mollis ut nisi. Curabitur tellus justo, sollicitudin id pretium at, blandit at ante. Morbi nec nisi magna. Nullam sit amet convallis quam. Pellentesque scelerisque tellus vel rutrum hendrerit. Aliquam non risus et purus tristique porttitor sit amet eleifend metus. Donec porttitor facilisis condimentum. In hac habitasse platea dictumst. Sed non dolor dictum, malesuada libero eget, consectetur mi. </p>
     )
 }
 
