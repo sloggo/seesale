@@ -43,6 +43,7 @@
     }
 
     .header-logo{
+        margin-left: 10px;
         font-size: 2.7rem;
         margin-right: 50px;
     }
@@ -61,5 +62,6 @@
 
     .header-icons{
         margin-left: 50px;
+        margin-right: 10px;
     }
   }
