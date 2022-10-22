@@ -41,11 +41,11 @@ function WelcomeText(){
 function Icons(){
     return(
         <div className='header-icons'>
-            <img src='./images/settings.svg' alt='Settings icon'></img>
-            <img src='./images/settings.svg' alt='Settings icon'></img>
+            <img src='./images/bell.svg' alt='Notifications icon'></img>
             <img src='./images/settings.svg' alt='Settings icon'></img>
         </div>
     )
 }
 
 export default HomeHeader
+export {ProfileIcon}

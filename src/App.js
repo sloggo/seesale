@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import HomeHeader from "./Components/HomeHeader";
+import Review from "./Components/Review";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -19,7 +20,10 @@ function App() {
   }
 
   return (
-    <HomeHeader isMobile={isMobile}></HomeHeader>
+    <>
+      <HomeHeader isMobile={isMobile}></HomeHeader>
+      <Review></Review>
+    </>
   );
 }
 
