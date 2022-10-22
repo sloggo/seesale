@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import '../Styles/HomeHeader.css'
 
-function HomeHeader() {
-  return (
-    <div>
+function HomeHeader( {isMobile} ) {
+  if(isMobile){ // Render Welcome text if it is on desktop
+    return (<div className='home-header'>
+        <Logo></Logo>
+        <Icons></Icons>
+    </div>)
+  } else{
+    return (<div className='home-header'>
         <Logo></Logo>
         <WelcomeText></WelcomeText>
         <Icons></Icons>
-    </div>
-  )
+    </div>)
+  }
 }
 
 function Logo(){
@@ -26,7 +32,7 @@ function ProfileIcon(){
 
 function WelcomeText(){
     return(
-        <h2 className='header-welcometext'>Welcome back, <span>USER</span></h2>
+        <h2 className='header-welcometext'>Welcome back, <span>USER</span></h2> // span to bold thte text
     )
 }
 
