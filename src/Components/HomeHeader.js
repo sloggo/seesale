@@ -5,11 +5,13 @@ function HomeHeader( {isMobile} ) {
   if(isMobile){ // Render Welcome text if it is on desktop
     return (<div className='home-header'>
         <Logo></Logo>
+        <ProfileIcon></ProfileIcon>
         <Icons></Icons>
     </div>)
   } else{
     return (<div className='home-header'>
         <Logo></Logo>
+        <ProfileIcon></ProfileIcon>
         <WelcomeText></WelcomeText>
         <Icons></Icons>
     </div>)
@@ -25,7 +27,7 @@ function Logo(){
 function ProfileIcon(){
     return(
         <div className='header-profile'>
-
+            <img src='./images/placeholderuser.svg' className='header-profile-icon' alt='User icon'></img>
         </div>
     )
 }
@@ -39,9 +41,9 @@ function WelcomeText(){
 function Icons(){
     return(
         <div className='header-icons'>
-            <img src='./images/settings.svg'></img>
-            <img src='./images/settings.svg'></img>
-            <img src='./images/settings.svg'></img>
+            <img src='./images/settings.svg' alt='Settings icon'></img>
+            <img src='./images/settings.svg' alt='Settings icon'></img>
+            <img src='./images/settings.svg' alt='Settings icon'></img>
         </div>
     )
 }

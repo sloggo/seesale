@@ -1,6 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 .home-header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 15px;
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #363636;
+}
+
+.header-logo{
+    font-weight: 300;
+    font-size: 2rem;
+    color: rgb(182, 182, 182);
+}
+
+.header-profile-icon{
+    background-color: white;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.header-icons{
+    display: flex;
+    gap: 10px;
 }
 
 @media only screen and (min-width: 768px) {
