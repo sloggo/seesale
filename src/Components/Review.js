@@ -29,7 +29,7 @@ function TopBarBottom(){
 
 function Image(){
     return(
-        <img src='./images/placeholdercontent.png'></img>
+        <img src='./images/placeholdercontent.png' className='review-image'></img>
     )
 }
 

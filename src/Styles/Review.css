@@ -33,3 +33,8 @@
     transform: translateY(-7px);
     filter: brightness(0.8);
 }
+
+.review-image{
+    margin-top: 10px;
+    width: 90%;
+}
