@@ -78,3 +78,9 @@
     color: rgba(255, 255, 255, 0.856);
     font-size: 0.85rem;
 }
+
+@media only screen and (min-width: 601px) {
+    .review-container{
+        width: clamp(200px, 450px, 500px)
+    }
+  }

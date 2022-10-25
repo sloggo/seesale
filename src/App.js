@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <HomeHeader isMobile={isMobile}></HomeHeader>
-      <Review></Review>
+      <MainContent></MainContent>
     </>
   );
 }
