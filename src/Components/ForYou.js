@@ -33,7 +33,7 @@ function BusinessContainer(){
                 <h2>Business</h2>
             </div>
 
-            
+        
         </div>
     )
 }
