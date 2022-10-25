@@ -28,8 +28,12 @@ function Content(){
 function BusinessContainer(){
     return(
         <div className='for-you-bus-container'>
-            <ProfileIcon></ProfileIcon>
-            <h2>Business</h2>
+            <div className='for-you-bus-title'>
+                <ProfileIcon></ProfileIcon>
+                <h2>Business</h2>
+            </div>
+
+            
         </div>
     )
 }

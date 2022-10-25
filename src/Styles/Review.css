@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     z-index: 0;
-    width: 85%;
+    width: 80%;
     color: rgba(255, 255, 255, 0.521);
 
     background-color: rgba(255, 255, 255, 0.06);
@@ -81,5 +81,9 @@
 @media only screen and (min-width: 601px) {
     .review-container{
         width: clamp(200px, 450px, 500px)
+    }
+
+    .review-topbartop-container .header-profile-icon{
+        width: 40px;
     }
   }
