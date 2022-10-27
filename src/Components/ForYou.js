@@ -22,6 +22,7 @@ function Content(){
     return(
         <div className='for-you-content'>
             <BusinessContainer></BusinessContainer>
+            <BusinessContainer></BusinessContainer>
         </div>
     )
 }

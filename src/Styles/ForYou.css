@@ -6,7 +6,7 @@
 
     width: clamp(200px, 370px, 500px);
     height: 85%;
-    padding: 10px 0px;
+    padding: 7px 0px;
 }
 
 .for-you-header{
@@ -29,6 +29,7 @@
     background-color: #ffffff07;
     padding: 10px 15px;
     
+    margin-bottom: 7px;
 }
 
 .for-you-bus-title{
