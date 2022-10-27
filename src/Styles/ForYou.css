@@ -40,3 +40,31 @@
 .for-you-bus-title .header-profile-icon{
     width: 50px;
 }
+
+.for-you-product-container{
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.for-you-product-image{
+    width: 40px;
+}
+
+.for-you-product-text-container{
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.692);
+}
+
+.for-you-product-container .review-rating-star{
+    width: 15px;
+}
+
+.for-you-product-text-title{
+    font-size: 1rem;
+}
+
+.for-you-product-text{
+    font-size: 0.8rem;
+}

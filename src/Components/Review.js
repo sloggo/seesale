@@ -74,3 +74,4 @@ function ViewComments(){
 }
 
 export default Review
+export {RatingStars}
