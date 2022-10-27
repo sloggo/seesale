@@ -2,6 +2,15 @@ import React from 'react'
 import '../Styles/Review.css';
 import { ProfileIcon } from './HomeHeader'
 
+function Reviews(){
+    return(
+        <div className='reviews-container'>
+            <Review></Review>
+            <Review></Review>
+        </div>
+    )
+}
+
 function Review() {
   return (
     <div className='review-container'>
@@ -32,7 +41,7 @@ function TopBarBottom(){
 
 function Image(){
     return(
-        <img src='./images/placeholdercontent.png' className='review-image' alt='Review Picture'></img>
+        <img src='./images/placeholdercontent.png' className='review-image' alt='Review'></img>
     )
 }
 
@@ -73,5 +82,5 @@ function ViewComments(){
     )
 }
 
-export default Review
+export default Reviews
 export {RatingStars}

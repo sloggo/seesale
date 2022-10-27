@@ -23,6 +23,7 @@ function Content(){
         <div className='for-you-content'>
             <BusinessContainer></BusinessContainer>
             <BusinessContainer></BusinessContainer>
+            <BusinessContainer></BusinessContainer>
         </div>
     )
 }
@@ -35,6 +36,7 @@ function BusinessContainer(){
                 <h2>Business</h2>
             </div>
 
+            <ProductContainer></ProductContainer>
             <ProductContainer></ProductContainer>
             <ProductContainer></ProductContainer>
         </div>
