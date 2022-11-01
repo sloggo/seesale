@@ -1,9 +1,22 @@
+.welcome-page-logo-container{
+    overflow: hidden;
+}
+
 .welcome-page-logo{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    margin: 20px 0px 0px 0px;
 
     color: rgb(0, 228, 114);
 
-    font-size: 10rem;
+    font-size: 5rem;
+}
+
+.welcome-page-subtitle{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+
+    color: rgba(255, 255, 255, 0.726);
+
 }
