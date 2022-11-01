@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import HomeHeader from "./Components/HomeHeader";
 import MainContent from "./Components/MainContent";
+import WelcomePage from "./Components/WelcomePage";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -21,8 +22,8 @@ function App() {
 
   return (
     <>
-      <HomeHeader isMobile={isMobile}></HomeHeader>
-      <MainContent isMobile={isMobile}></MainContent>
+      <WelcomePage>
+      </WelcomePage>
     </>
   );
 }
