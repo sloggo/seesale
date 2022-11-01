@@ -1,3 +1,8 @@
+.welcome-page-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .welcome-page-logo-container{
     overflow: hidden;
 }
@@ -5,7 +10,7 @@
 .welcome-page-logo{
     display: flex;
     justify-content: center;
-    margin: 20px 0px 0px 0px;
+    margin-top: 5px;
 
     color: rgb(0, 228, 114);
 
@@ -19,4 +24,23 @@
 
     color: rgba(255, 255, 255, 0.726);
 
+}
+
+.welcome-page-subtitle2{
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+
+    color: rgba(255, 255, 255, 0.863);
+
+}
+
+.welcome-page-product-container{
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.025);
+}
+
+.welcome-page-product{
+    width: 200px;
 }
