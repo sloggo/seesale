@@ -37,10 +37,24 @@
 }
 
 .welcome-page-product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+
     margin-top: 40px;
     background-color: rgba(255, 255, 255, 0.025);
 }
 
 .welcome-page-product{
     width: 200px;
+    filter: brightness(0.7);
+    aspect-ratio: 1/1;
+
+    margin: 0px 10px;
+}
+
+.welcome-page-product.current-product{
+    filter: brightness(1);
 }
