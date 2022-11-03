@@ -37,7 +37,7 @@ function Products(){
     const spindleTime = 3000;
     const [spindleCount, setSpindleCount] = useState(0)
 
-    const [items, setItems] = useState([{
+    const [items, setItems] = useState([{ // make item array state to keep track of ids and sources to render them easily and for react to update them accordingly
         id: 'shoe',
         src: './images/shoe.png',
         layout: true
@@ -63,40 +63,40 @@ function Products(){
         layout: true
     },])
 
-    function spinSpindle(){
-        let newItems = [...items]
+    function spinSpindle(){ // shuffles the item array to move the spindle items around
+        let newItems = [...items] // creates copy of items to not overwrite state
 
-        const itmToMove = {...newItems[0]};
+        const itmToMove = {...newItems[0]}; // gets specfic item at the start of the array
         const nextToMove = {...newItems[1]};
 
         newItems.splice(0, 1)
-        itmToMove.layout = true;
-        newItems.push(itmToMove)
+        itmToMove.layout = true; // to allow the framer-motion animation to play
+        newItems.push(itmToMove) // moves first item to the end of the array
 
-        nextToMove.layout = false;
-        newItems.splice(0, 1, nextToMove)
+        nextToMove.layout = false; // to stop the framer-motion animation from animating spot [0] to [-1] with the next item
+        newItems.splice(0, 1, nextToMove) // replaces new item with the old item
 
-        setItems(newItems)
+        setItems(newItems) // updates state and allows react to re-render
         console.log(newItems)
     }
 
-    useEffect(() => {
+    useEffect(() => { // spins the spindle every interval / adjustable from the variable interval
         const interval = setInterval(() => {
-          setSpindleCount( (prev) => prev+1 )
+          setSpindleCount( (prev) => prev+1 ) // use spindlecount variable as function doesn't call properly in the set interval function
         }, spindleTime);
       
         return () => clearInterval(interval);
       }, []);
 
-    useEffect(() => {
+    useEffect(() => { // spins the spindle everytime the interval runs by using useeffect on the spindlecount variable
         spinSpindle()
     }, [spindleCount]);
 
     return(
         <motion.div className='welcome-page-product-container'>
             {items.map((item, itemIndex) => {
-                if(itemIndex === 2){
-                    return <motion.img layout={item.layout} key={item.id} src={item.src} className='welcome-page-product current-product'></motion.img>
+                if(itemIndex === 2){ // if the item is the centre item / currently focused item
+                    return <motion.img layout={item.layout} key={item.id} src={item.src} className='welcome-page-product current-product'></motion.img> // add special current product class to highlight it
                 } else{
                     return <motion.img layout={item.layout} transition={{layout: {duration:0.2}}} key={item.id} src={item.src} className='welcome-page-product'></motion.img>
                 }

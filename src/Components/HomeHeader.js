@@ -34,7 +34,7 @@ function ProfileIcon(){
 
 function WelcomeText(){
     return(
-        <h2 className='header-welcometext'>Welcome back, <span className='header-welcometext-bold'>USER</span></h2> // span to bold thte text
+        <h2 className='header-welcometext'>Welcome back, <span className='header-welcometext-bold'>USER</span></h2> // span to bold the text
     )
 }
 

@@ -8,15 +8,15 @@ function App() {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    window.addEventListener('resize', handleWindowResize) // Change the window width state when desktop size changes
+    window.addEventListener('resize', handleWindowResize) // change the window width state when desktop size changes
   }, [])
 
   useEffect(() => {
-    const mobile = windowWidth <= 600; // Update the isMobile state when window width changes
+    const mobile = windowWidth <= 600; // update the isMobile state when window width changes
     setIsMobile(mobile)
   }, [windowWidth])
 
-  function handleWindowResize(){
+  function handleWindowResize(){ // updates window width state
     setWindowWidth(window.innerWidth)
   }
 
