@@ -25,8 +25,8 @@ function Header(){
 function Logo(){
     return(
         <div className='welcome-page-logo-container'>
-            <motion.h1 className='welcome-page-logo' initial={{x:-200, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:1}}>SeeSale</motion.h1>
-            <h2 className='welcome-page-logo-subtext'>See, sell, explore</h2>
+            <motion.h1 className='welcome-page-logo' initial={{x:-200, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:.5}}>SeeSale</motion.h1>
+            <motion.h2 className='welcome-page-logo-subtext' initial={{y:200, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:.5, delay:0.5}}>See, sell, explore</motion.h2>
         </div>
     )
 }
@@ -65,9 +65,9 @@ function SignUp(){
 function Text(){
     return(
         <div className='welcome-text'>
-            <h1><span>Social Media</span></h1>
-            <h1><span>Eccommerce</span>,</h1>
-            <h1>Made easy.</h1>
+            <motion.h1><span>Social Media</span></motion.h1>
+            <motion.h1><span>Eccommerce</span>,</motion.h1>
+            <motion.h1>Made easy.</motion.h1>
         </div>
     )
 }
