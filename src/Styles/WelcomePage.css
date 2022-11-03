@@ -112,6 +112,8 @@
 }
 
 .welcome-text{
+    margin-top: 30px;
+
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -121,4 +123,16 @@
 .welcome-text h1{
     color: white;
     font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.welcome-text h1 span{
+    color: #6DDB86;
+    font-weight: 400;
+}
+
+.welcome-page-icons{
+    margin-top: 15px;
+    align-self: center;
+    width: 55%;
 }

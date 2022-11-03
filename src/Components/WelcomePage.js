@@ -8,6 +8,7 @@ function WelcomePage() {
         <Header></Header>
         <AccountButtons></AccountButtons>
         <Text></Text>
+        <img src='./images/welcomeicons.svg' className='welcome-page-icons'></img>
     </div>
   )
 }
@@ -64,8 +65,8 @@ function SignUp(){
 function Text(){
     return(
         <div className='welcome-text'>
-            <h1>Social Media</h1>
-            <h1>Eccommerce,</h1>
+            <h1><span>Social Media</span></h1>
+            <h1><span>Eccommerce</span>,</h1>
             <h1>Made easy.</h1>
         </div>
     )
