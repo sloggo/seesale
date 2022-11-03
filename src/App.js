@@ -12,8 +12,8 @@ function App() {
   }, [])
 
   useEffect(() => {
-    const mobile = windowWidth <= 600; // update the isMobile state when window width changes
-    setIsMobile(mobile)
+    const mobile = windowWidth <= 600; 
+    setIsMobile(mobile) // update the isMobile (boolean) state when window width changes
   }, [windowWidth])
 
   function handleWindowResize(){ // updates window width state
