@@ -110,3 +110,15 @@
     font-weight: 400;
     font-size: 1rem;
 }
+
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.welcome-text h1{
+    color: white;
+    font-weight: 400;
+}

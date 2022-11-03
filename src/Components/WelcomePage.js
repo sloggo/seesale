@@ -7,6 +7,7 @@ function WelcomePage() {
     <div className='welcome-page-container'>
         <Header></Header>
         <AccountButtons></AccountButtons>
+        <Text></Text>
     </div>
   )
 }
@@ -57,6 +58,16 @@ function LogIn(){
 function SignUp(){
     return(
         <h3 className='welcome-signup'>Sign Up</h3>
+    )
+}
+
+function Text(){
+    return(
+        <div className='welcome-text'>
+            <h1>Social Media</h1>
+            <h1>Eccommerce,</h1>
+            <h1>Made easy.</h1>
+        </div>
     )
 }
 
