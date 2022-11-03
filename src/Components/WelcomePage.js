@@ -65,9 +65,17 @@ function SignUp(){
 function Text(){
     return(
         <div className='welcome-text'>
-            <motion.h1><span>Social Media</span></motion.h1>
-            <motion.h1><span>Eccommerce</span>,</motion.h1>
-            <motion.h1>Made easy.</motion.h1>
+            <div className='text-container'> {/* to allow overflow to be hidden to give the pop up behind a wall effect */}
+                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1}}><span>Social Media</span></motion.h1>
+            </div>
+
+            <div className='text-container'>
+                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:.3}}><span>Eccommerce</span>,</motion.h1>
+            </div>
+
+            <div className='text-container'>
+                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:.6}}>Made easy.</motion.h1>
+            </div>
         </div>
     )
 }
