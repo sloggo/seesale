@@ -25,8 +25,8 @@ function Header(){
 function Logo(){
     return(
         <div className='welcome-page-logo-container'>
-            <motion.h1 className='welcome-page-logo' initial={{x:-200, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:.5}}>SeeSale</motion.h1>
-            <motion.h2 className='welcome-page-logo-subtext' initial={{y:200, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:.5, delay:0.5}}>See, sell, explore</motion.h2>
+            <motion.h1 className='welcome-page-logo' initial={{x:-200, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:.7}}>SeeSale</motion.h1>
+            <motion.h2 className='welcome-page-logo-subtext' initial={{y:200, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:.7, delay:0.3}}>See, sell, explore</motion.h2>
         </div>
     )
 }
@@ -66,15 +66,15 @@ function Text(){
     return(
         <div className='welcome-text'>
             <div className='text-container'> {/* to allow overflow to be hidden to give the pop up behind a wall effect */}
-                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1}}><span>Social Media</span></motion.h1>
+                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:.7}}><span>Social Media</span></motion.h1>
             </div>
 
             <div className='text-container'>
-                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:.3}}><span>Eccommerce</span>,</motion.h1>
+                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:1}}><span>Eccommerce</span>,</motion.h1>
             </div>
 
             <div className='text-container'>
-                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:.6}}>Made easy.</motion.h1>
+                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:1.3}}>Made easy.</motion.h1>
             </div>
         </div>
     )
