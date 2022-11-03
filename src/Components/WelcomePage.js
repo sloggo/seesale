@@ -5,19 +5,35 @@ import { motion } from "framer-motion";
 function WelcomePage() {
   return (
     <div className='welcome-page-container'>
-        <Logo></Logo>
-        <SubTitle></SubTitle>
-        <SubTitle2></SubTitle2>
-        <Products></Products>
+        <Header></Header>
     </div>
   )
+}
+
+function Header(){
+    return(
+        <header className='welcome-header'>
+            <Logo></Logo>
+            <Nav></Nav>
+        </header>
+    )
 }
 
 function Logo(){
     return(
         <div className='welcome-page-logo-container'>
             <motion.h1 className='welcome-page-logo' initial={{x:-200, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:1}}>SeeSale</motion.h1>
+            <h2 className='welcome-page-logo-subtext'>See, sell, explore</h2>
         </div>
+    )
+}
+
+function Nav(){
+    return(
+        <ul className='nav-container'>
+            <li className='nav-item'>Home</li>
+            <li className='nav-item'>About</li>
+        </ul>
     )
 }
 
