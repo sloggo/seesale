@@ -1,6 +1,8 @@
 .welcome-page-container{
     display: flex;
     flex-direction: column;
+
+    gap: 20px;
 }
 
 .welcome-header{
@@ -48,6 +50,8 @@
     gap: 30px;
     color: rgba(255, 255, 255, 0.80);
     list-style: none;
+
+    font-size: 1.2rem;
 }
 
 .welcome-page-product-container{
@@ -71,4 +75,38 @@
 
 .welcome-page-product.current-product{
     filter: brightness(1);
+}
+
+.welcome-accountbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.welcome-login{
+    width: 120px;
+    background-color: #B2F9C2;
+    border: 3px solid #6DDB86;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 10px 0px;
+    border-radius: 10px;
+
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.welcome-signup{
+    width: 120px;
+    background-color: #EE88FF;
+    border: 3px solid #D870E9;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 10px 0px;
+    border-radius: 10px;
+
+    font-weight: 400;
+    font-size: 1rem;
 }

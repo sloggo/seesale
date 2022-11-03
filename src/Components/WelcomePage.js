@@ -6,6 +6,7 @@ function WelcomePage() {
   return (
     <div className='welcome-page-container'>
         <Header></Header>
+        <AccountButtons></AccountButtons>
     </div>
   )
 }
@@ -37,15 +38,25 @@ function Nav(){
     )
 }
 
-function SubTitle(){
+function AccountButtons(){
     return(
-        <motion.h3 className='welcome-page-subtitle' initial={{y:-30, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:0.8, delay: 0.7}}>See, Sell and Explore,</motion.h3>
+        <div className='welcome-accountbuttons'>
+            <LogIn></LogIn>
+
+            <SignUp></SignUp>
+        </div>
     )
 }
 
-function SubTitle2(){
+function LogIn(){
     return(
-        <motion.h3 className='welcome-page-subtitle2' initial={{y:-30, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:0.8, delay: 1.2}}>Social Media ecommerce made easy</motion.h3>
+        <h3 className='welcome-login'>Log In</h3>
+    )
+}
+
+function SignUp(){
+    return(
+        <h3 className='welcome-signup'>Sign Up</h3>
     )
 }
 
