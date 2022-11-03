@@ -8,7 +8,7 @@ function WelcomePage() {
         <Header></Header>
         <AccountButtons></AccountButtons>
         <Text></Text>
-        <img src='./images/welcomeicons.svg' className='welcome-page-icons'></img>
+        <motion.img src='./images/welcomeicons.svg' className='welcome-page-icons' initial={{rotate:-5}} animate={{rotate: 5}} transition={{duration:5, repeat: Infinity, repeatType:'reverse'}}></motion.img>
     </div>
   )
 }
@@ -25,8 +25,8 @@ function Header(){
 function Logo(){
     return(
         <div className='welcome-page-logo-container'>
-            <motion.h1 className='welcome-page-logo' initial={{x:-200, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:.7}}>SeeSale</motion.h1>
-            <motion.h2 className='welcome-page-logo-subtext' initial={{y:200, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:.7, delay:0.3}}>See, sell, explore</motion.h2>
+            <motion.h1 className='welcome-page-logo' initial={{x:-200, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:.7, type:'spring'}}>SeeSale</motion.h1>
+            <motion.h2 className='welcome-page-logo-subtext' initial={{y:200, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:.7, delay:0.3, type:'spring'}}>See, sell, explore</motion.h2>
         </div>
     )
 }
@@ -66,15 +66,15 @@ function Text(){
     return(
         <div className='welcome-text'>
             <div className='text-container'> {/* to allow overflow to be hidden to give the pop up behind a wall effect */}
-                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:.7}}><span>Social Media</span></motion.h1>
+                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:1, type:'spring'}}><span>Social Media</span></motion.h1>
             </div>
 
             <div className='text-container'>
-                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:1}}><span>Eccommerce</span>,</motion.h1>
+                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:1.3, type:'spring'}}><span>Eccommerce</span>,</motion.h1>
             </div>
 
             <div className='text-container'>
-                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:1.3}}>Made easy.</motion.h1>
+                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:1.6, type:'spring'}}>Made easy.</motion.h1>
             </div>
         </div>
     )
