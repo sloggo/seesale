@@ -2,22 +2,25 @@ import '../Styles/WelcomePage.css';
 import React, { useState, useEffect } from 'react'
 import { motion } from "framer-motion";
 
-function WelcomePage() {
+function WelcomePage(props) {
   return (
     <div className='welcome-page-container'>
-        <Header></Header>
-        <AccountButtons></AccountButtons>
-        <Text></Text>
-        <motion.img src='./images/welcomeicons.svg' className='welcome-page-icons' initial={{rotate:-5}} animate={{rotate: 5}} transition={{duration:5, repeat: Infinity, repeatType:'reverse'}}></motion.img>
+        <Header isMobile={props.isMobile}></Header>
+        {props.isMobile && <AccountButtons></AccountButtons>}
+        <div className='welcome-content-container'>
+            <Text isMobile={props.isMobile}></Text>
+            <motion.img src='./images/welcomeicons.svg' className='welcome-page-icons' initial={{rotate:-5}} animate={{rotate: 5}} transition={{duration:5, repeat: Infinity, repeatType:'reverse'}}></motion.img>
+        </div>
     </div>
   )
 }
 
-function Header(){
+function Header(props){
     return(
         <header className='welcome-header'>
             <Logo></Logo>
             <Nav></Nav>
+            {!props.isMobile && <AccountButtons></AccountButtons>}
         </header>
     )
 }
@@ -75,6 +78,10 @@ function Text(){
 
             <div className='text-container'>
                 <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:1.6, type:'spring'}}>Made easy.</motion.h1>
+            </div>
+
+            <div className='last-text-container'>
+                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:3, type:'spring'}}>Start <span>today</span></motion.h1>
             </div>
         </div>
     )

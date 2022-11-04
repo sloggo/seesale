@@ -142,3 +142,56 @@
     align-self: center;
     width: 55%;
 }
+
+.welcome-content-container{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 601px) {
+    .welcome-accountbuttons{
+        margin-left: auto;
+    }
+
+    .nav-container{
+        margin-left: 150px;
+        gap: 100px;
+    }
+
+    .welcome-content-container{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .welcome-page-icons{
+        width: 30%;
+    }
+
+    .welcome-text h1{
+        font-size: 6rem;
+    }
+
+    .welcome-text{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .last-text-container h1{
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.651);
+    }
+
+    .last-text-container h1 span{
+        color: #EE88FF;
+        font-weight: 400;
+    }
+
+    .last-text-container{
+        margin-top: 30px;
+        overflow: hidden;
+    }
+  }

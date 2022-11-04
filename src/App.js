@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <WelcomePage>
+      <WelcomePage isMobile={isMobile}>
       </WelcomePage>
     </>
   );
