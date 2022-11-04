@@ -172,7 +172,7 @@ function About(){
             </div>
             
             <div className='about-box'>
-                <h1 className='about-box-title'>Who made it?</h1>
+                <h1 className='about-box-title title2'>Who made it?</h1>
                 <p className='about-box-text'>SeeSale was made by a 17 year old web developer named Josh for a portfolio project for his application to a college course.</p>
             </div>
 
