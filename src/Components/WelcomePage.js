@@ -7,10 +7,13 @@ function WelcomePage(props) {
     <div className='welcome-page-container'>
         <Header isMobile={props.isMobile}></Header>
         {props.isMobile && <AccountButtons></AccountButtons>}
-        <div className='welcome-content-container'>
+
+        <div className='welcome-content-container'> {/* to allow mobile flex container changes*/}
             <Text isMobile={props.isMobile}></Text>
             <motion.img src='./images/welcomeicons.svg' className='welcome-page-icons' initial={{rotate:-5}} animate={{rotate: 5}} transition={{duration:5, repeat: Infinity, repeatType:'reverse'}}></motion.img>
         </div>
+
+        <About></About>
     </div>
   )
 }
@@ -156,6 +159,24 @@ function Products(){
                 }
             })}
         </motion.div>
+    )
+}
+
+function About(){
+    return(
+        <div className='welcome-about-container'>
+            
+            <div className='about-box'>
+                <h1 className='about-box-title'>What is SeeSale?</h1>
+                <p className='about-box-text'>An easy to use, eccommerce social media made for sharing, liking and discovering new products</p>
+            </div>
+            
+            <div className='about-box'>
+                <h1 className='about-box-title'>Who made it?</h1>
+                <p className='about-box-text'>SeeSale was made by a 17 year old web developer named Josh for a portfolio project for his application to a college course.</p>
+            </div>
+
+        </div>
     )
 }
 
