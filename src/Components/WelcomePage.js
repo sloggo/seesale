@@ -109,4 +109,4 @@ function About(){
 }
 
 export default WelcomePage
-export {Header}
+export {Logo}

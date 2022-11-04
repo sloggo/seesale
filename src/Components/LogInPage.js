@@ -1,16 +1,26 @@
 import React from 'react'
-import { Header } from './WelcomePage'
 import { motion } from "framer-motion";
 import { useState, useEffect } from 'react';
+import { Logo } from './WelcomePage';
 import "../Styles/WelcomePage.css"
+import "../Styles/LogInPage.css"
 
 function LogInPage(props) {
   return (
     <div className='login-page-container'>
-        <Header isMobile={true}></Header>
+        <Header></Header>
+        <LogIn></LogIn>
         <Products></Products>
     </div>
   )
+}
+
+function Header(){
+    return(
+        <div className='login-header'>
+            <Logo></Logo>
+        </div>
+    )
 }
 
 function Products(){
@@ -85,4 +95,31 @@ function Products(){
     )
 }
 
+function LogIn(){
+    return(
+        <div className='login-container'>
+            <h1 className='login-title'>Log In</h1>
+
+            <LogInForm></LogInForm>
+        </div>
+    )
+}
+
+function LogInForm(){
+    return(
+        <form className='login-form'>
+            <div className='input'>
+                <label for="username">Username</label>
+                <input type='text' id='username' name='username'></input>
+            </div>
+
+            <div className='input'>
+                <label for="username">Password</label>
+                <input type='password' id='password' name='password'></input>
+            </div>
+
+            <button className='login-submit'>Log In</button>
+        </form>
+    )
+}
 export default LogInPage
