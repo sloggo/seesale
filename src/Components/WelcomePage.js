@@ -181,3 +181,4 @@ function About(){
 }
 
 export default WelcomePage
+export {Header}
