@@ -65,7 +65,7 @@ function SignUp(){
     )
 }
 
-function Text(){
+function Text(props){
     return(
         <div className='welcome-text'>
             <div className='text-container'> {/* to allow overflow to be hidden to give the pop up behind a wall effect */}
@@ -80,9 +80,9 @@ function Text(){
                 <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:1.6, type:'spring'}}>Made easy.</motion.h1>
             </div>
 
-            <div className='last-text-container'>
-                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:3, type:'spring'}}>Start <span>today</span></motion.h1>
-            </div>
+            { !props.isMobile && <div className='last-text-container'>
+                <motion.h1 initial={{y:100}} animate={{y:0}} transition={{duration:1, delay:3, type:'spring'}}>Start <span>today</span>!</motion.h1>
+            </div>}
         </div>
     )
 }

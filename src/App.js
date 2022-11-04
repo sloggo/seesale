@@ -12,7 +12,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    const mobile = windowWidth <= 600; 
+    const mobile = windowWidth <= 900; 
     setIsMobile(mobile) // update the isMobile (boolean) state when window width changes
   }, [windowWidth])
 

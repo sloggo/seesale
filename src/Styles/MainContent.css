@@ -5,7 +5,7 @@
     gap: 50px;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 901px) {
     .main-content{
         margin-top: 50px;
     }
