@@ -72,13 +72,13 @@ function Products(){
 
     useEffect(() => { // spins the spindle every interval / adjustable from the variable interval
         const interval = setInterval(() => {
-          setSpindleCount( (prev) => prev+1 ) // use spindlecount variable as function doesn't call properly in the set interval function
+          setSpindleCount( (prev) => prev+1 ) // use spindlecount variable as function doesn't call properly in useEffect interval function
         }, spindleTime);
       
         return () => clearInterval(interval);
-      }, []);
+      }, []); // [] to ensure it only runs once
 
-    useEffect(() => { // spins the spindle everytime the interval runs by using useeffect on the spindlecount variable
+    useEffect(() => { // spins the spindle everytime the interval runs by using useEffect on the spindlecount variable
         spinSpindle()
     }, [spindleCount]);
 
