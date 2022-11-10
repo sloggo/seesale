@@ -94,6 +94,7 @@
 
     .login-page-content-container{
         display: flex;
+        justify-content: center;
         gap: 150px;
     }
 

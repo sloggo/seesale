@@ -10,10 +10,11 @@ function LogInPage(props) {
     <div className='login-page-container'>
         <Header></Header>
 
-        <div className='login-page-content-container'>
-            {!props.isMobile && <LockAndKey></LockAndKey>}
+        {props.isMobile && <LogIn></LogIn>}
+        {!props.isMobile && <div className='login-page-content-container'>
+            <LockAndKey></LockAndKey>
             <LogIn></LogIn>
-        </div>
+        </div>}
 
         <Products></Products>
     </div>
