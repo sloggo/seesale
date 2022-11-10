@@ -125,7 +125,10 @@ function LogInForm(){
             </div>
             <p className='forgot-password'>Forgot your password? No worries.</p>
 
-            <button className='login-submit'>Log In</button>
+            <div className='login-buttons'>
+                <button className='login-submit'>Log In</button>
+                <button className='login-signup'>Sign Up</button>
+            </div>
         </form>
     )
 }
