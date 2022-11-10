@@ -75,7 +75,7 @@
 
 @media only screen and (min-width: 901px) {
     .login-container{
-        margin-top: 75px;
+        margin: 75px 0px;
     }
 
     .lock-and-key{
@@ -89,10 +89,17 @@
 
     .login-key{
         width: 80%;
+        transform: translateY(-20px);
     }
 
     .login-page-content-container{
         display: flex;
         gap: 150px;
+    }
+
+    .welcome-page-product-container{
+        background-color: #121212;
+        width: 50%;
+        overflow: hidden;
     }
   }

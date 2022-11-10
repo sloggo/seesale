@@ -132,7 +132,7 @@ function LogInForm(){
 function LockAndKey(){
     return(
         <div className='lock-and-key'>
-            <img src='./images/key.svg' className='login-key' alt='login key'></img>
+            <motion.img src='./images/key.svg' className='login-key' alt='login key' initial={{rotate:-5, y:40}} animate={{rotate: 2}} transition={{duration:5, repeat: Infinity, repeatType:'reverse'}}></motion.img>
             <motion.img src='./images/lock.svg' className='login-lock' alt='login lock' initial={{rotate:-5}} animate={{rotate: 3}} transition={{duration:.5, repeat: Infinity, repeatType:'reverse'}}></motion.img>
         </div>
     )
