@@ -117,8 +117,10 @@
     }
 
     .welcome-page-product-container{
-        background-color: #121212;
-        width: 50%;
+        background-color: #ffffff00;
+        width: 60%;
         overflow: hidden;
+        border-top: 3px solid #6ddb87;
+        padding-top: 75px;
     }
   }
