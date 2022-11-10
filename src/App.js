@@ -23,6 +23,7 @@ function App() {
 
   return (
     <>
+      <WelcomePage isMobile={isMobile}></WelcomePage>
       <LogInPage isMobile={isMobile}></LogInPage>
     </>
   );
