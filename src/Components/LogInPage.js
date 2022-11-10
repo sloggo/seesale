@@ -9,7 +9,12 @@ function LogInPage(props) {
   return (
     <div className='login-page-container'>
         <Header></Header>
-        <LogIn></LogIn>
+
+        <div className='login-page-content-container'>
+            {!props.isMobile && <LockAndKey></LockAndKey>}
+            <LogIn></LogIn>
+        </div>
+
         <Products></Products>
     </div>
   )
@@ -117,9 +122,20 @@ function LogInForm(){
                 <label for="username">Password</label>
                 <input type='password' id='password' name='password'></input>
             </div>
+            <p className='forgot-password'>Forgot your password? No worries.</p>
 
             <button className='login-submit'>Log In</button>
         </form>
     )
 }
+
+function LockAndKey(){
+    return(
+        <div className='lock-and-key'>
+            <img src='./images/key.svg' className='login-key' alt='login key'></img>
+            <motion.img src='./images/lock.svg' className='login-lock' alt='login lock' initial={{rotate:-5}} animate={{rotate: 3}} transition={{duration:.5, repeat: Infinity, repeatType:'reverse'}}></motion.img>
+        </div>
+    )
+}
+
 export default LogInPage
